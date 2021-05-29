@@ -1,13 +1,12 @@
-let ourArray = [];
-for (let i = 0; i < 5; i++) {
-    if (i > 2) break;
-    ourArray.push(i);
+document.getElementById('userInput').addEventListener('input', showValue);
+
+function showValue() {
+    let userValue = document.getElementById('userInput').value;
+    if (userValue == 3) {
+        document.getElementById('showSomething').innerText = 'try again';
+    } else {
+
+        document.getElementById('showSomething').innerText = userValue;
+    }
+    return userValue;
 }
-
-console.log(ourArray);
-
-let arr = [10, 9, 8, 7, 6];
-for (let i = 0; i < arr.length; i++) {
-    console.log(arr[i]);
-}
-
